@@ -1,0 +1,62 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"> 
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:ui="http://java.sun.com/jsf/facelets"
+      xmlns:f="http://java.sun.com/jsf/core"
+      xmlns:h="http://java.sun.com/jsf/html"> 
+
+<h:head>
+	<title>Jogo do Adivinha</title>
+	<meta
+		content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0, shrink-to-fit=no'
+		name='viewport' />
+	<!--     Fonts and icons     -->
+	<link rel="stylesheet" type="text/css"
+		href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:400,700|Material+Icons" />
+	<link rel="stylesheet"
+		href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css" />
+	<!-- CSS Files -->
+	<link href="assets/css/material-dashboard.css?v=2.1.1" rel="stylesheet" />
+	<!-- CSS Just for demo purpose, don't include it in your project -->
+	<link href="assets/demo/demo.css" rel="stylesheet" />
+</h:head> 
+<body> 
+	<div class="main-panel">
+		<div class="content">
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-md-8">
+						<div class="card">
+							<div class="card-header card-header-primary">
+								<h4 class="card-title">Adivinhe o número...</h4>
+							</div>
+							<div class="card-body">
+								<h:form>
+								<div class="row">
+										<h:messages id="message" styleClass="alert alert-danger col-md-12" />
+								</div>
+								<h:outputLabel class="card-title" value="#{chuteBean.mensagem}" style="color:red;" />
+								<br/>
+								<h:outputLabel class="card-title" value="Estou pensando em um número entre #{chuteBean.numMenor} e #{chuteBean.numMaior}. Você tem #{chuteBean.contTentativas} restantes!" />
+								<br/>
+								<div class="row">
+									<div class="col-md-12">
+										<h:outputLabel value="Seu chute:" />
+										<h:inputText id="numero" type="text" styleClass="box" size="3" 
+												value="#{chuteBean.chute.valor}" validator="#{chuteBean.validaChute}"/>
+										<h:commandButton styleclass="btn btn-primary pull-right" 
+											action="#{chuteBean.compararChute()}" value="Chutar" />
+									</div>
+								</div>
+								<br/>
+									<h:commandButton type="submit" immediate="true" class="btn btn-primary pull-left"
+										action="#{chuteBean.reiniciar()}" value="Reiniciar" />
+								</h:form>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</body> 
+</html>

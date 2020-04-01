@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="UTF-8">
+	<title>Cadastro de Dependentes</title>
+	<!--     Fonts and icons     -->
+	<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:400,700|Material+Icons" />
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css">
+	<!-- CSS Files -->
+	<link href="assets/css/material-dashboard.css?v=2.1.1" rel="stylesheet" />
+	<!-- CSS Just for demo purpose, don't include it in your project -->
+	<link href="assets/demo/demo.css" rel="stylesheet" />
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+</head>
+<body>
+	<div class="content">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-md-8">
+              <div class="card">
+                <div class="card-header card-header-primary">
+                  <h4 class="card-title">Dependente</h4>
+                </div>
+                <div class="card-body">
+                  <form>
+                    <div class="row">
+                      <div class="col-md-8">
+                        <div class="form-group">
+                          <label class="bmd-label-floating" ></label>
+                          <input type="text" id="nome" name="nome" class="form-control" placeholder="Nome Completo*">
+                        </div>
+                      </div>
+                      <div class="col-md-4">
+                        <div class="form-group">
+                          <label class="bmd-label-floating"></label>
+                          <input type="text" id="sequencial" name="sequencial" class="form-control" placeholder="Sequencial*">
+                        </div>
+                      </div>
+                    </div>
+                    <br>
+                    <div class="row" >
+                      <div class="col-md-6">
+                      <label class="bmd-label-floating">Sexo*:</label>
+                        <div class="form-group">
+                          <label class="radio-inline">
+                          <input type="radio" name="sexo" checked>Masculino</label>
+                          <label class="radio-inline">
+                          <input type="radio" name="sexo">Feminino</label>
+						</div>
+						<br>
+                      </div>
+	                    <div class="col-md-6">
+	                      <div class="form-group">
+	                        <label class="bmd-label-floating"></label>
+	                        <input type="date" id="nascimento" name="nascimento" class="form-control" placeholder="Data de Nascimento*">
+	                      </div>
+	                    </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-md-6">
+                      <label class="bmd-label-floating">Participa do plano?</label>
+                        <div class="form-group">
+                          <label class="radio-inline">
+                          <input type="radio" name="plano" checked>Sim</label>
+                          <label class="radio-inline">
+                          <input type="radio" name="plano">Não</label>
+						</div>
+                      </div>
+                      <div class="col-md-6">
+                        <div class="form-group">
+                          <label class="bmd-label-floating"></label>
+                          <input type="text" id="funcionario" name="funcionario" class="form-control" placeholder="Funcionario filiado:">
+                        </div>
+                      </div>
+                    </div>
+                    <button type="submit" class="btn btn-primary pull-right">Salvar</button>
+                 </form>
+                </div>
+              </div>
+            </div>
+         </div>
+      </div>
+    </div>
+</body>
+</html>

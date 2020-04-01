@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="UTF-8">
+	<title>Cadastro de Produtos</title>
+	<!--     Fonts and icons     -->
+	<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:400,700|Material+Icons" />
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css">
+	<!-- CSS Files -->
+	<link href="assets/css/material-dashboard.css?v=2.1.1" rel="stylesheet" />
+	<!-- CSS Just for demo purpose, don't include it in your project -->
+	<link href="assets/demo/demo.css" rel="stylesheet" />
+	<link href="assets/demo/demo.css" rel="stylesheet" />
+</head>
+<body>
+	<div class="content">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-md-8">
+              <div class="card">
+                <div class="card-header card-header-primary">
+                  <h4 class="card-title">Novo Produto</h4>
+                </div>
+                <div class="card-body">
+                  <form action="processaCadastro.jsp">
+                    <div class="row">
+                      <div class="col-md-4">
+                        <div class="form-group">
+                          <label class="bmd-label-floating" ></label>
+                          <input type="text" id="nome" name="nome" class="form-control" placeholder="Nome*">
+                        </div>
+                      </div>
+                      <div class="col-md-8">
+                        <div class="form-group">
+                          <label class="bmd-label-floating"></label>
+                          <input type="text" id="descricao" name="descricao" class="form-control" placeholder="Descrição*">
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row">
+						<div class="col-md-6">
+						  <div class="form-group">
+						    <label class="bmd-label-floating"></label>
+						    <select class="form-control" id="categoria">
+						    	<option >Categoria*</option> 
+							    <option>Ferramentas</option>
+								<option>Utilidades</option>
+							</select>
+						  </div>
+						</div>
+	                    <div class="col-md-6">
+	                      <div class="form-group">
+	                        <label class="bmd-label-floating"></label>
+	                        <input type="text" id="fornecedor" name="fornecedor" class="form-control" placeholder="Fornecedor*">
+	                      </div>
+	                    </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-md-12">
+                        <div class="form-group">
+                          <label class="bmd-label-floating"></label>
+                          <input type="text" id="observacoes" name="observacoes" class="form-control" placeholder="Observações">
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-md-4">
+                        <div class="form-group">
+                          <label class="bmd-label-floating"></label>
+                          <select class="form-control" id="unidade">
+						    	<option>Unidade*</option> 
+							    <option>Item</option>
+								<option>Conjunto</option>
+						  </select>
+                        </div>
+                      </div>
+                      <div class="col-md-4">
+                        <div class="form-group">
+                          <label class="bmd-label-floating"></label>
+                          <input type="number" id="custo" name="custo" class="form-control" placeholder="Custo*">
+                        </div>
+                      </div>
+                      <div class="col-md-4">
+                        <div class="form-group">
+                          <label class="bmd-label-floating"></label>
+                          <input type="number" id="precovenda" name="precovenda" class="form-control" placeholder="Preço Venda*">
+                        </div>
+                      </div>
+                    </div>
+                    <button type="submit" class="btn btn-primary pull-right">Salvar</button>
+                 </form>
+                </div>
+              </div>
+            </div>
+         </div>
+      </div>
+    </div>
+</body>
+</html>
