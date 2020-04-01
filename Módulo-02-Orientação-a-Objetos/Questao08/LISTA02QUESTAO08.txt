@@ -1,0 +1,86 @@
+QUESTAO 08
+
+8.1.
+
+A. V
+B. F
+C. V
+D. V
+E. V
+F. V
+G. V
+H. V
+I. F
+J. F
+K. V
+L. V
+M. F
+N. V
+O. F
+P. V
+Q. V
+R. V 
+S. V
+T. V
+U. V
+V. V
+W. F
+X. V
+Y. F
+Z. V
+
+8.2. D
+
+8.3. C
+
+8.4.
+
+1. F
+2. S
+3. G
+4. R
+5. T
+6. H
+7. O
+8. I
+9. Q
+10. E
+11. K
+12. C
+13. N
+14. L
+15. J
+16. D
+17. A
+18. P
+19. B
+20. M
+
+8.5
+
+A. Uma classe é o conjunto de objetos que possuem a mesma estrutura de dados, 
+definida pelos atributos e métodos (comportamento), ou seja, é um modelo 
+para criação de objetos com características em comum.
+
+B. Um objeto é um elemento de uma classe, quando esta é instanciada.
+Cada objeto tem sua identidade e se distingue de outros objetos a partir
+de suas propriedades, mesmo que seus atributos e métodos sejam idênticos.
+
+8.6 A assinatura de um método é o jeito de identificá-lo de forma única.
+Métodos com mesmo nome (polimorfismo) podem se distinguir a partir da entrada de
+parâmetros, por exemplo. Dentro de uma mesma classe, pode-se escrever dois métodos
+de mesmo nome:
+
+public void imprimir(){
+	System.out.println("Oi");
+}
+
+public void imprimir(String frase){
+	System.out.println(frase);
+}
+
+O método a ser executado vai depender do tipo de chamada (com ou sem parâmetros).
+Se no código foi chamado o método "imprimir()", será impresso na tela: "Oi".
+Mas se for colocado um String como input em "imprimir("Olá!")", será impresso na tela
+a frase "Olá!".
+
